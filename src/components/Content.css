@@ -1,0 +1,28 @@
+.content_container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  font-size: 15px;
+  align-items: end;
+}
+
+@media only screen and (max-width: 768px) {
+  .content_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    font-size: 15px;
+    align-items: end;
+  }
+}
+
+.album > img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  align-self: end;
+}
+  
+  .album-title{
+    padding-bottom: 15px;
+  }
