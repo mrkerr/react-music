@@ -1,0 +1,32 @@
+a{
+  color: #eeeae7;
+  text-decoration: none;
+}
+
+#twitter:hover{
+  background-color:#0084b4;
+  transition: 0.5s;
+}
+
+#lastfm:hover{
+  background-color:#BB0000;
+  transition: 0.5s;
+}
+
+#spotify:hover{
+  background-color:#1DB954;
+  transition: 0.5s;
+}
+
+html{
+  background-color: #243F50;
+}
+
+::selection {
+  background: #e5c0A9; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #e5c0A9; /* Gecko Browsers */
+}
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Code&display=swap');

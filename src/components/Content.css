@@ -6,6 +6,22 @@
   align-items: end;
 }
 
+.page_title { 
+  grid-column-start: 1; 
+  grid-column-end: 4; 
+  grid-row-start: 1; 
+  grid-row-end: 2; 
+  text-align: center;
+  height: 80px;
+  background-color: #e5c0A9;
+  font-family: 'Fira Code', monospace;
+  color: #243F50;
+}
+
+h1{
+  background-color: #e5c0A9;
+}
+
 @media only screen and (max-width: 768px) {
   .content_container {
     display: grid;
@@ -13,6 +29,16 @@
     grid-gap: 10px;
     font-size: 15px;
     align-items: end;
+  }
+
+  .page_title { 
+    grid-column-start: 1; 
+    grid-column-end: 3; 
+    grid-row-start: 1; 
+    grid-row-end: 1; 
+    text-align: center;
+    background-color: #e5c0A9;
+    color: #243F50;
   }
 }
 
@@ -25,4 +51,9 @@
   
   .album-title{
     padding-bottom: 15px;
+  }
+
+  .album-title:hover{
+    color: #e5c0A9;
+    transition: 0.3s;
   }

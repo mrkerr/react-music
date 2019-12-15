@@ -2,11 +2,11 @@ import React, { Component } from "react";
 import TopBar from "./components/TopBar";
 import FooterMenu from "./components/FooterMenu";
 import Content from "./components/Content";
-import AlbumTweet from "./components/AlbumTweet";
+import * as ALBUMS from "./components/Constants"
 
-import "./App.css"
+import "./albums_twenty_nineteen.css"
 
-class App extends Component {
+class albums_twenty_nineteen extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -15,8 +15,8 @@ class App extends Component {
   render() {
     const styles = {
       white: (opacity = 1) => `rgba(255, 255, 255, ${opacity})`,
-      black: (opacity = 1) => `rgba(45, 44, 48, ${opacity})`,
-      topBarHeight: 100,
+      black: (opacity = 1) => `#243F50`,
+      topBarHeight: 110,
       footerMenuHeight: 40
     };
 
@@ -29,18 +29,17 @@ class App extends Component {
     return (
       <div
         style={{
-          backgroundColor: styles.black(0.05),
+          backgroundColor: styles.black(),
           minHeight: "100vh",
           position: "relative"
         }}
       >
         <TopBar styles={styles} />
-        <Content styles={styles} />
+        <Content styles={styles} albums={ALBUMS.TOP_TWENTY_ALBUMS_2019} special_mentions={ALBUMS.SPECIAL_MENTIONS_2019}/>
         <FooterMenu menuItems={menuItems} styles={styles} />
-        {/* <AlbumTweet styles={styles} /> */}
       </div>
     );
   }
 }
 
-export default App;
+export default albums_twenty_nineteen;

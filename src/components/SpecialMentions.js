@@ -1,5 +1,7 @@
-import React from "react";
+import React, { Component } from "react";
+import "./SpecialMentions.css"
 import {SPECIAL_MENTIONS_2019 as SPECIAL_MENTIONS} from "./Constants"
+
 
 const SpecialMentions = () => {
   const contentStyle = {
@@ -11,7 +13,7 @@ const SpecialMentions = () => {
   };
 
   return (
-      <div>
+      <div className={"centered"}>
         <h3>other cool albums (in no order)</h3>
           {SPECIAL_MENTIONS.map((album_entry, i) => {
           return (
