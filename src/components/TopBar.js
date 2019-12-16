@@ -23,7 +23,7 @@ class TopBar extends React.Component {
       borderBottom: `1px solid ${this.styles.white(0.1)}`,
       fontWeight: "bold",
       paddingRight: "20px",
-      paddingTop: "10px",
+      paddingTop: "0px",
       boxSizing: "border-box",
       color: "white",
       fontSize: '20px'
@@ -32,13 +32,15 @@ class TopBar extends React.Component {
   return (
     <div className={"header_container"} style={topBarStyle}>
       <Menu>
-        <Link to="/year">2019</Link>
+        <Link to="/year_2019">2019</Link>
         <div>&nbsp;</div>
-        <Link to="/users">2018</Link>
+        <Link to="/year_2018">2018</Link>
         <div>&nbsp;</div>
-        <Link to="/users">2017</Link>
+        <Link to="/year_2017">2017</Link>
         <div>&nbsp;</div>
-        <Link to="/users">decade</Link>
+        <Link to="/decade">decade</Link>
+        <div>&nbsp;</div>
+        <Link to="/collage">last.fm collage</Link>
         <div>&nbsp;</div>
         <Link to="/">home</Link>
       </Menu>

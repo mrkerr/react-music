@@ -1,26 +1,15 @@
 
-
-.last_fm_collage{
-  text-align: center;
-  left: 50%;
-  align-items: center;
-  justify-content: center;
-}
-
-.collage_outer{
-  border: 2px solid white;
-  font-size: 50px;
-  height: 150px;
-  text-align: center;
-}
-.collage_inner{
-  text-align: center;
-  left: 50%;
-  top: 50%;
-}
-
 .collage_title{
   width: 100%;
   text-align: center;
   color: #243F50;
 }
+
+.collage_image > img{
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  align-self: end;
+  z-index: 0;
+}
+

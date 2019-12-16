@@ -20,6 +20,7 @@
 
 h1{
   background-color: #e5c0A9;
+  color: #243F50;
 }
 
 @media only screen and (max-width: 768px) {
@@ -40,6 +41,33 @@ h1{
     background-color: #e5c0A9;
     color: #243F50;
   }
+
+  .home_title{
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+
+  .home_content_container{
+    display: grid;
+    grid-template-columns: repeat(1, 3fr);
+    font-size: 30px;
+  }
+
+  .home_text{
+    text-align: center;
+    width: 100%;
+  }
+
+  .home_image{
+    margin-bottom: 10px;
+    height: 800px;
+  }
+
+  .home_image_container{
+  }
+
+
 }
 
 .album > img {
@@ -57,3 +85,31 @@ h1{
     color: #e5c0A9;
     transition: 0.3s;
   }
+
+
+.home_title{
+  width: 100%;
+  text-align: center;
+}
+
+.home_content_container{
+  display: flex;
+  font-size: 30px;
+}
+
+.home_text{
+  padding-top: 20px;
+}
+
+.home_image_container{
+  padding-top: 20px;
+}
+
+.home_image{
+  margin-bottom: 10px;
+  height: 800px;
+}
+
+.home_logo{
+  text-align: center;
+}

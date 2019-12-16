@@ -1,0 +1,64 @@
+.home_container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  font-size: 15px;
+  height: 100%;
+}
+
+.home_title { 
+  grid-column-start: 1; 
+  grid-column-end: 3; 
+  grid-row-start: 1; 
+  grid-row-end: 2; 
+  text-align: center;
+  height: 80px;
+  background-color: #e5c0A9;
+  font-family: 'Fira Code', monospace;
+  color: #243F50;
+  margin-bottom: 50px;
+}
+
+h1{
+  background-color: #e5c0A9;
+}
+
+.home_outer_text{
+  font-size: 30px;
+  height: 150px;
+  grid-column-start: 1; 
+  grid-column-end: 3; 
+  grid-row-start: 3; 
+  grid-row-end: 5; 
+  display: block;
+}
+
+.home_outer_image{
+  font-size: 30px;
+  height: 150px;
+  grid-column-start: 1; 
+  grid-column-end: 3; 
+  grid-row-start: 5; 
+  grid-row-end: 7; 
+}
+
+
+.home_inner{
+  text-align: center;
+  left: 50%;
+  top: 50%;
+}
+
+.logo_image{
+  padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .logo_image{
+    padding-bottom: 50px;
+  }
+
+  .logo_image > img{
+    width: 100%;
+  }
+}

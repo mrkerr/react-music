@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
-import albums_twenty_nineteen from './albums_twenty_nineteen';
+import ShowAlbums from './ShowAblums';
 import Home from './Home'
 import Year from './Year'
 import Collage from './Collage'
@@ -12,8 +12,11 @@ const routing = (
   <Router>
     <div>
       <Route exact path="/" component={Home} />
-      <Route path="/year" component={Year} />
-      <Route path="/albums_twenty_nineteen" component={albums_twenty_nineteen} />
+      <Route path="/year_2019" render={(props) => <Year {...props} year={`2019`} />} />
+      <Route path="/year_2018" render={(props) => <Year {...props} year={`2018`} />} />
+      <Route path="/year_2017" render={(props) => <Year {...props} year={`2017`} />} />
+      <Route path="/decade" render={(props) => <Year {...props} year={`Decade`} />} />
+      <Route path="/ShowAlbums" component={ShowAlbums} />
       <Route path="/collage" component={Collage} />
     </div>
   </Router>

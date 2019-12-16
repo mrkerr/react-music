@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Content.css"
+import Typed from 'react-typed';
 import SpecialMentions from "./SpecialMentions"
 
 class Content extends Component {
@@ -9,6 +10,7 @@ class Content extends Component {
     this.state = { isOpen: false, album_id: null }
     this.albums = this.props.albums
     this.special_mentions = this.props.special_mentions
+    this.year = this.props.year
   }
   render() {
 
@@ -21,10 +23,18 @@ class Content extends Component {
     color: 'white',
   };
 
+  const year = this.year
+
     return (
       <div style={contentStyle} >
         <div className={'content_container'}>
-          <div className='page_title'><h1>Best albums of 2019</h1></div>
+          <div className='page_title'><h1>
+          <Typed
+                    strings={['Best Albums Of ' + (year || 'The Decade')]}
+                    typeSpeed={80}
+                    showCursor={false}
+                />
+            </h1></div>
           {this.albums.map((album_entry, i) => {
             return (
               <div className={'album'} key={i} style={{ marginBottom: 40 }}>

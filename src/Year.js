@@ -4,12 +4,13 @@ import FooterMenu from "./components/FooterMenu";
 import YearContent from "./components/YearContent";
 import * as ALBUMS from "./components/Constants"
 
-import "./albums_twenty_nineteen.css"
+import "./show_albums.css"
 
 class Year extends Component {
   constructor(props) {
     super(props);
     this.state = {};
+    this.year = this.props.year;
   }
 
   render() {
@@ -35,8 +36,8 @@ class Year extends Component {
         }}
       >
         <TopBar styles={styles} />
-        <YearContent styles={styles}/>
-        <FooterMenu menuItems={menuItems} styles={styles} />
+        <YearContent styles={styles} year={this.year}/>
+        <FooterMenu menuItems={menuItems} styles={styles}/>
       </div>
     );
   }

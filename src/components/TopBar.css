@@ -10,6 +10,7 @@
 .site_title{
   height: 20px;
   padding-right: 10px;
+  padding-top: 10px;
 }
 
 @media only screen and (max-width: 768px) {

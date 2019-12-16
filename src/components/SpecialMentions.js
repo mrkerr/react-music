@@ -1,29 +1,29 @@
 import React, { Component } from "react";
 import "./SpecialMentions.css"
-import {SPECIAL_MENTIONS_2019 as SPECIAL_MENTIONS} from "./Constants"
 
+class SpecialMentions extends Component {
+  constructor(props) {
+    super(props);
+    this.styles = this.props.styles
+    this.special_mentions = this.props.special_mentions
+  }
 
-const SpecialMentions = () => {
-  const contentStyle = {
-    fontSize: '3vh',
-    color: 'white',
-    display: "flex",
-    alignItems: "stretch",
-    width: "100%",
+  render(){
+
+    return (
+        <div className={"centered"}>
+          <h3>other cool albums (in no order)</h3>
+            {this.special_mentions.map((album_entry, i) => {
+            return (
+              <div key={i}>
+                <span><i>{album_entry.artist + ' - ' + album_entry.album}</i></span>
+              </div>
+            );
+            })}
+        </div>
+    );
   };
+}
 
-  return (
-      <div className={"centered"}>
-        <h3>other cool albums (in no order)</h3>
-          {SPECIAL_MENTIONS.map((album_entry, i) => {
-          return (
-            <div key={i}>
-              <span><i>{album_entry.artist + ' - ' + album_entry.album}</i></span>
-            </div>
-          );
-          })}
-      </div>
-  );
-  };
 
 export default SpecialMentions;

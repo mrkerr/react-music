@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import "./YearContent.css"
+import "./CollageContent.css"
+import Typed from 'react-typed';
 import {Link} from 'react-router-dom'
 
 class CollageContent extends Component {
@@ -22,7 +23,13 @@ class CollageContent extends Component {
 
     return (
       <div style={contentStyle} >
-        <div className='collage_title'><h1 className='collage_title'>Current last.fm collage</h1></div>
+        <div className='collage_title'><h1>
+        <Typed
+                    strings={['Current last.fm collage']}
+                    typeSpeed={70}
+                    showCursor={false}
+                />
+          </h1></div>
         <div className='collage_image'><img src={'http://www.tapmusic.net/collage.php?user=kerr_ific&type=7day&size=3x3&caption=true'}/></div>
       </div>
       
