@@ -4,7 +4,7 @@ import FooterMenu from "./components/FooterMenu";
 import YearContent from "./components/YearContent";
 import * as ALBUMS from "./components/Constants"
 
-import "./show_albums.css"
+import "./ShowAlbums.css"
 
 class Year extends Component {
   constructor(props) {

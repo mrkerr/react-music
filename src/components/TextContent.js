@@ -1,13 +1,15 @@
 import React, { Component } from "react";
 import "./HomeContent.css"
-import SpecialMentions from "./SpecialMentions"
 import logo from './output-onlinejpgtools.png';
 import Typed from 'react-typed';
 
-class HomeContent extends Component {
+
+class TextContent extends Component {
   constructor(props) {
     super(props);
     this.styles = this.props.styles
+    this.page_text = this.props.page_text
+    this.page_title = this.props.page_title
   }
   render() {
 
@@ -19,20 +21,23 @@ class HomeContent extends Component {
     backgroundColor: this.styles.black(),
     color: '#e5c0A9',
   };
+  const page_text = this.page_text;
+  const page_title = this.page_title;
+  const type_speed = this.type_speed;
 
     return (
       <div style={contentStyle} >
         <div className={'home_container'}>
           <div className='home_title'><h1>
           <Typed
-                    strings={['Home']}
-                    typeSpeed={80}
+                    strings={[page_title]}
+                    typeSpeed={50}
                     showCursor={false}
                 />
             </h1></div>
           <div className={'home_outer_text'} style={{ marginBottom: 40 }}>
             <div className={'home_inner'}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              {page_text}
             <div className='logo_image'>
               <img src={logo} width={'30%'}/>
             </div>
@@ -44,4 +49,4 @@ class HomeContent extends Component {
   };
 }
 
-export default HomeContent;
+export default TextContent;

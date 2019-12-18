@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+
 .home_container{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -31,6 +33,7 @@ h1{
   grid-row-start: 3; 
   grid-row-end: 5; 
   display: block;
+  font-family: 'Pacifico', cursive;
 }
 
 .home_outer_image{

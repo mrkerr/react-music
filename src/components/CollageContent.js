@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import "./CollageContent.css"
-import Typed from 'react-typed';
 import {Link} from 'react-router-dom'
+import { labeledStatement } from "@babel/types";
+import Typed from 'react-typed';
+
 
 class CollageContent extends Component {
   constructor(props) {
@@ -26,7 +28,7 @@ class CollageContent extends Component {
         <div className='collage_title'><h1>
         <Typed
                     strings={['Current last.fm collage']}
-                    typeSpeed={70}
+                    typeSpeed={50}
                     showCursor={false}
                 />
           </h1></div>

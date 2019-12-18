@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import TopBar from "./components/TopBar";
 import FooterMenu from "./components/FooterMenu";
-import HomeContent from "./components/HomeContent";
+import TextContent from "./components/TextContent";
 import * as ALBUMS from "./components/Constants"
-
+import {HOME_TEXT as HOME_TEXT} from "./components/Constants"
 
 
 class Home extends Component {
@@ -35,7 +35,7 @@ class Home extends Component {
         }}
       >
         <TopBar styles={styles} />
-        <HomeContent styles={styles}/>
+        <TextContent styles={styles} page_text={HOME_TEXT} page_title={'Home'}/>
         <FooterMenu menuItems={menuItems} styles={styles} />
       </div>
     );

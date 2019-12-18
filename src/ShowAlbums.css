@@ -11,6 +11,7 @@ a{
 #lastfm:hover{
   background-color:#BB0000;
   transition: 0.5s;
+  color: white;
 }
 
 #spotify:hover{
@@ -23,10 +24,10 @@ html{
 }
 
 ::selection {
-  background: #e5c0A9; /* WebKit/Blink Browsers */
+  background: #7a0612; /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: #e5c0A9; /* Gecko Browsers */
+  background: #7a0612; /* Gecko Browsers */
 }
 
 @import url('https://fonts.googleapis.com/css?family=Fira+Code&display=swap');

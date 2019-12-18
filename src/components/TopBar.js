@@ -32,19 +32,25 @@ class TopBar extends React.Component {
   return (
     <div className={"header_container"} style={topBarStyle}>
       <Menu>
+        <Link to="/">home</Link>
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
         <Link to="/year_2019">2019</Link>
         <div>&nbsp;</div>
         <Link to="/year_2018">2018</Link>
         <div>&nbsp;</div>
         <Link to="/year_2017">2017</Link>
         <div>&nbsp;</div>
+        <Link to="/year_2016">2016</Link>
+        <div>&nbsp;</div>
         <Link to="/decade">decade</Link>
         <div>&nbsp;</div>
         <Link to="/collage">last.fm collage</Link>
         <div>&nbsp;</div>
-        <Link to="/">home</Link>
+
       </Menu>
-      <div className="site_title">Mitch's Favorite Music</div>
+      <div className="site_title"><Link to="/">kerrific dot com</Link></div>
     </div>
   );
 };

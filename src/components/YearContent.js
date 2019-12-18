@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import "./YearContent.css"
 import {Link} from 'react-router-dom'
-import Typed from 'react-typed';
-import logo from './output-onlinejpgtools.png';
 
 
 class YearContent extends Component {
@@ -24,32 +22,34 @@ class YearContent extends Component {
     color: 'white',
   };
 
-  const newTo = { 
+  const toAlbum = { 
     pathname: "/ShowAlbums", 
+    year: year, 
+  };
+
+  const toSong = { 
+    pathname: "/ShowSongs", 
     year: year, 
   };
 
     return (
       <div style={contentStyle} >
         <div className={'year_container'}>
-          <div className='year_title'><h1><Typed
-                    strings={[year + ' Favorites']}
-                    typeSpeed={80}
-                    showCursor={false}
-                /></h1></div>
+          <div className='year_title'><h1>{year + ' Favorites'}</h1></div>
+          <Link to={toSong}>
           <div className={'list_link_outer'} style={{ marginBottom: 40 }}>
             <div className={'list_link_inner'}>
-              <Link to="/users">Top Songs</Link>
+              Top Songs
               </div>
           </div>
+          </Link>
+          <Link to={toAlbum}>
           <div className={'list_link_outer'} style={{ marginBottom: 40 }}>
             <div className={'list_link_inner'}>
-              <Link to={newTo}>Top Albums</Link>
+              Top Albums
               </div>
           </div>
-          <div className={'year_logo'}>
-            <img src={logo} width={'100%'}/>
-          </div>
+          </Link>
         </div>
       </div>
     );

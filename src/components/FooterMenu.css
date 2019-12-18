@@ -1,0 +1,8 @@
+.footer_link{
+  color: #243F50;
+}
+
+.footer_container:hover > .footer_link{
+  color: white;
+  transition: 0.5s;
+}

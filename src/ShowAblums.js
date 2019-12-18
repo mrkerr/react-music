@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import TopBar from "./components/TopBar";
 import FooterMenu from "./components/FooterMenu";
-import Content from "./components/Content";
+import TopAlbums from "./components/TopAlbums";
 import * as ALBUMS from "./components/Constants"
 
-import "./show_albums.css"
+import "./ShowAlbums.css"
 
 class ShowAlbums extends Component {
   constructor(props) {
@@ -13,7 +13,9 @@ class ShowAlbums extends Component {
     this.year = this.props.location.year;
   }
 
+
   render() {
+
     const styles = {
       white: (opacity = 1) => `rgba(255, 255, 255, ${opacity})`,
       black: (opacity = 1) => `#243F50`,
@@ -41,7 +43,7 @@ class ShowAlbums extends Component {
         }}
       >
         <TopBar styles={styles} />
-        <Content styles={styles} albums={albums_arr} special_mentions={special_mentions_arr} year={year}/>
+        <TopAlbums styles={styles} albums={albums_arr} special_mentions={special_mentions_arr} year={year}/>
         <FooterMenu menuItems={menuItems} styles={styles} />
       </div>
     );

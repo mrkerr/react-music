@@ -33,14 +33,3 @@ h1{
   left: 50%;
   top: 50%;
 }
-
-.year_logo{
-  grid-column-start: 1; 
-  grid-column-end: 3; 
-  grid-row-start: 4; 
-  grid-row-end: 5; 
-  text-align: center;
-  font-family: 'Fira Code', monospace;
-  color: #243F50;
-  margin-bottom: 50px;
-}

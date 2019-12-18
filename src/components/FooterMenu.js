@@ -1,5 +1,6 @@
 
 import React from "react";
+import './FooterMenu.css'
 
 const FooterMenu = ({ menuItems, styles }) => {
   return (
@@ -9,10 +10,9 @@ const FooterMenu = ({ menuItems, styles }) => {
         alignItems: "stretch",
         width: "100%",
         height: styles.footerMenuHeight,
-        backgroundColor: "#54788f",
-        color: "#eeeae7",
+        backgroundColor: "#e5c0A9",
         position: "fixed",
-        bottom: 0
+        bottom: 0,
       }}
     >
       {menuItems.map((item, i) => {
@@ -26,8 +26,9 @@ const FooterMenu = ({ menuItems, styles }) => {
               justifyContent: "center",
               flex: 1
             }}
+            className='footer_container'
           >
-            <a style={{ fontSize: '3vh' }} href={item.link} target={'_blank'}>{item.social}</a>
+            <a style={{ fontSize: '3vh' }} href={item.link} className={'footer_link'} target={'_blank'}>{item.social}</a>
           </div>
         );
       })}
