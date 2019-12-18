@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/mrkerr/react-music/static/css/main.ddf3530b.chunk.css",
+    "main.js": "/mrkerr/react-music/static/js/main.9cb9b8d3.chunk.js",
+    "main.js.map": "/mrkerr/react-music/static/js/main.9cb9b8d3.chunk.js.map",
+    "runtime-main.js": "/mrkerr/react-music/static/js/runtime-main.3d9a8ea7.js",
+    "runtime-main.js.map": "/mrkerr/react-music/static/js/runtime-main.3d9a8ea7.js.map",
+    "static/js/2.3a50d116.chunk.js": "/mrkerr/react-music/static/js/2.3a50d116.chunk.js",
+    "static/js/2.3a50d116.chunk.js.map": "/mrkerr/react-music/static/js/2.3a50d116.chunk.js.map",
+    "index.html": "/mrkerr/react-music/index.html",
+    "precache-manifest.757638c507e6678f5b4f8da8d3199561.js": "/mrkerr/react-music/precache-manifest.757638c507e6678f5b4f8da8d3199561.js",
+    "service-worker.js": "/mrkerr/react-music/service-worker.js",
+    "static/css/main.ddf3530b.chunk.css.map": "/mrkerr/react-music/static/css/main.ddf3530b.chunk.css.map",
+    "static/js/2.3a50d116.chunk.js.LICENSE": "/mrkerr/react-music/static/js/2.3a50d116.chunk.js.LICENSE",
+    "static/media/output-onlinejpgtools.png": "/mrkerr/react-music/static/media/output-onlinejpgtools.aa21c76c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3d9a8ea7.js",
+    "static/js/2.3a50d116.chunk.js",
+    "static/css/main.ddf3530b.chunk.css",
+    "static/js/main.9cb9b8d3.chunk.js"
+  ]
+}
