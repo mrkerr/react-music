@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/mrkerr/react-music/static/css/main.ddf3530b.chunk.css",
-    "main.js": "/mrkerr/react-music/static/js/main.60d5977c.chunk.js",
-    "main.js.map": "/mrkerr/react-music/static/js/main.60d5977c.chunk.js.map",
+    "main.js": "/mrkerr/react-music/static/js/main.8a62ebbb.chunk.js",
+    "main.js.map": "/mrkerr/react-music/static/js/main.8a62ebbb.chunk.js.map",
     "runtime-main.js": "/mrkerr/react-music/static/js/runtime-main.3d9a8ea7.js",
     "runtime-main.js.map": "/mrkerr/react-music/static/js/runtime-main.3d9a8ea7.js.map",
-    "static/js/2.3a50d116.chunk.js": "/mrkerr/react-music/static/js/2.3a50d116.chunk.js",
-    "static/js/2.3a50d116.chunk.js.map": "/mrkerr/react-music/static/js/2.3a50d116.chunk.js.map",
+    "static/js/2.83024b9f.chunk.js": "/mrkerr/react-music/static/js/2.83024b9f.chunk.js",
+    "static/js/2.83024b9f.chunk.js.map": "/mrkerr/react-music/static/js/2.83024b9f.chunk.js.map",
     "index.html": "/mrkerr/react-music/index.html",
-    "precache-manifest.70cbbb526b5d6ca00f1118584fcd154a.js": "/mrkerr/react-music/precache-manifest.70cbbb526b5d6ca00f1118584fcd154a.js",
+    "precache-manifest.2c7743ea5142299ee1c5419a573acd49.js": "/mrkerr/react-music/precache-manifest.2c7743ea5142299ee1c5419a573acd49.js",
     "service-worker.js": "/mrkerr/react-music/service-worker.js",
     "static/css/main.ddf3530b.chunk.css.map": "/mrkerr/react-music/static/css/main.ddf3530b.chunk.css.map",
-    "static/js/2.3a50d116.chunk.js.LICENSE": "/mrkerr/react-music/static/js/2.3a50d116.chunk.js.LICENSE",
+    "static/js/2.83024b9f.chunk.js.LICENSE": "/mrkerr/react-music/static/js/2.83024b9f.chunk.js.LICENSE",
     "static/media/output-onlinejpgtools.png": "/mrkerr/react-music/static/media/output-onlinejpgtools.aa21c76c.png"
   },
   "entrypoints": [
     "static/js/runtime-main.3d9a8ea7.js",
-    "static/js/2.3a50d116.chunk.js",
+    "static/js/2.83024b9f.chunk.js",
     "static/css/main.ddf3530b.chunk.css",
-    "static/js/main.60d5977c.chunk.js"
+    "static/js/main.8a62ebbb.chunk.js"
   ]
 }
