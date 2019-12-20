@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "./YearContent.css"
 import {Link} from 'react-router-dom'
+import Typed from 'react-typed';
+
 
 
 class YearContent extends Component {
@@ -35,7 +37,13 @@ class YearContent extends Component {
     return (
       <div style={contentStyle} >
         <div className={'year_container'}>
-          <div className='year_title'><h1>{year + ' Favorites'}</h1></div>
+          <div className='year_title'><h1>
+          <Typed
+                    strings={[year + ' Favorites']}
+                    typeSpeed={50}
+                    showCursor={false}
+                />
+          </h1></div>
           <Link to={toSong}>
           <div className={'list_link_outer'} style={{ marginBottom: 40 }}>
             <div className={'list_link_inner'}>

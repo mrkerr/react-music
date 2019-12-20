@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./TopAlbums.css"
 import SpecialMentions from "./SpecialMentions"
+import Typed from 'react-typed';
 
 class TopAlbums extends Component {
   constructor(props) {
@@ -27,10 +28,16 @@ class TopAlbums extends Component {
     return (
       <div style={contentStyle} >
         <div className={'content_container'}>
-          <div className='page_title'><h1>{'Best Albums Of ' + (year || 'The Decade')}</h1></div>
+          <div className='page_title'><h1>
+          <Typed
+                    strings={['Best Albums Of ' + (year || 'The Decade')]}
+                    typeSpeed={50}
+                    showCursor={false}
+                />
+            </h1></div>
           {this.albums.map((album_entry, i) => {
             return (
-              <div className={'album'} key={i} style={{ marginBottom: 40 }}>
+              <div className={'album'} key={i} style={{ marginBottom: 40}}>
                 <a target={"_blank"} href={album_entry.spotify_link}><h2 className={'album-title'} style={{ marginBottom: 0 }}>{album_entry.artist + ' - ' + album_entry.album}</h2></a>
                   <img src={album_entry.cover_link} alt={album_entry.album} />
               </div>

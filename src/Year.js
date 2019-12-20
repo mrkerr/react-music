@@ -22,9 +22,9 @@ class Year extends Component {
     };
 
     const menuItems = [
-      { social: `twitter`, link: 'https://twitter.com/Kerr_ific', text: "twitter" },
-      { social: `last.fm`, link: 'https://www.last.fm/user/kerr_ific', text: "lastfm" },
-      { social: `spotify`, link: 'https://open.spotify.com/user/1226332507?si=2Htm36xZQl--xst6w28_GQ', text: "spotify" },
+      { link: 'https://twitter.com/Kerr_ific', has_icon: true},
+      { link: 'https://www.last.fm/user/kerr_ific', has_icon: false},
+      { link: 'https://open.spotify.com/user/1226332507?si=2Htm36xZQl--xst6w28_GQ', has_icon: true},
     ];
 
     return (

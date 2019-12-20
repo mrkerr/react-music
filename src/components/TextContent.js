@@ -10,6 +10,7 @@ class TextContent extends Component {
     this.styles = this.props.styles
     this.page_text = this.props.page_text
     this.page_title = this.props.page_title
+    this.font = this.props.font || 'monospace'
   }
   render() {
 
@@ -23,7 +24,7 @@ class TextContent extends Component {
   };
   const page_text = this.page_text;
   const page_title = this.page_title;
-  const type_speed = this.type_speed;
+  const font = this.font;
 
     return (
       <div style={contentStyle} >
@@ -35,7 +36,7 @@ class TextContent extends Component {
                     showCursor={false}
                 />
             </h1></div>
-          <div className={'home_outer_text'} style={{ marginBottom: 40 }}>
+          <div className={'home_outer_text'} style={{ marginBottom: 40, fontFamily: font}}>
             <div className={'home_inner'}>
               {page_text}
             <div className='logo_image'>

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
+import { Route, Link, HashRouter as Router } from 'react-router-dom'
 import ShowAlbums from './ShowAblums';
 import ShowSongs from './ShowSongs';
 import Home from './Home'
@@ -10,7 +10,7 @@ import Collage from './Collage'
 
 
 const routing = (
-  <Router>
+  <Router basename={process.env.PUBLIC_URL}>
     <div>
       <Route exact path="/" component={Home} />
       <Route path="/year_2019" render={(props) => <Year {...props} year={`2019`} />} />
