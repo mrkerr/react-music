@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/mrkerr/react-music/static/css/main.ddf3530b.chunk.css",
-    "main.js": "/mrkerr/react-music/static/js/main.595156b5.chunk.js",
-    "main.js.map": "/mrkerr/react-music/static/js/main.595156b5.chunk.js.map",
-    "runtime-main.js": "/mrkerr/react-music/static/js/runtime-main.3d9a8ea7.js",
-    "runtime-main.js.map": "/mrkerr/react-music/static/js/runtime-main.3d9a8ea7.js.map",
-    "static/js/2.83024b9f.chunk.js": "/mrkerr/react-music/static/js/2.83024b9f.chunk.js",
-    "static/js/2.83024b9f.chunk.js.map": "/mrkerr/react-music/static/js/2.83024b9f.chunk.js.map",
-    "index.html": "/mrkerr/react-music/index.html",
-    "precache-manifest.598e0af1be61c6093ab9d311d2208420.js": "/mrkerr/react-music/precache-manifest.598e0af1be61c6093ab9d311d2208420.js",
-    "service-worker.js": "/mrkerr/react-music/service-worker.js",
-    "static/css/main.ddf3530b.chunk.css.map": "/mrkerr/react-music/static/css/main.ddf3530b.chunk.css.map",
-    "static/js/2.83024b9f.chunk.js.LICENSE": "/mrkerr/react-music/static/js/2.83024b9f.chunk.js.LICENSE",
-    "static/media/output-onlinejpgtools.png": "/mrkerr/react-music/static/media/output-onlinejpgtools.aa21c76c.png"
+    "main.css": "/react-music/static/css/main.314f63e3.chunk.css",
+    "main.js": "/react-music/static/js/main.fc1b8715.chunk.js",
+    "main.js.map": "/react-music/static/js/main.fc1b8715.chunk.js.map",
+    "runtime-main.js": "/react-music/static/js/runtime-main.2e1c8f71.js",
+    "runtime-main.js.map": "/react-music/static/js/runtime-main.2e1c8f71.js.map",
+    "static/js/2.83024b9f.chunk.js": "/react-music/static/js/2.83024b9f.chunk.js",
+    "static/js/2.83024b9f.chunk.js.map": "/react-music/static/js/2.83024b9f.chunk.js.map",
+    "index.html": "/react-music/index.html",
+    "precache-manifest.5d41166327dca82b10956144933ce6a9.js": "/react-music/precache-manifest.5d41166327dca82b10956144933ce6a9.js",
+    "service-worker.js": "/react-music/service-worker.js",
+    "static/css/main.314f63e3.chunk.css.map": "/react-music/static/css/main.314f63e3.chunk.css.map",
+    "static/js/2.83024b9f.chunk.js.LICENSE": "/react-music/static/js/2.83024b9f.chunk.js.LICENSE",
+    "static/media/output-onlinejpgtools.png": "/react-music/static/media/output-onlinejpgtools.aa21c76c.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.3d9a8ea7.js",
+    "static/js/runtime-main.2e1c8f71.js",
     "static/js/2.83024b9f.chunk.js",
-    "static/css/main.ddf3530b.chunk.css",
-    "static/js/main.595156b5.chunk.js"
+    "static/css/main.314f63e3.chunk.css",
+    "static/js/main.fc1b8715.chunk.js"
   ]
 }
